@@ -1,0 +1,133 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --brand-navy: #102A43;
+  --brand-blue: #2563EB;
+  --brand-gold: #F4B942;
+  --brand-gray: #F7F9FC;
+  --brand-text: #1E293B; /* Slightly deeper slate for higher contrast and crispness */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  color: var(--brand-text);
+  background-color: #FFFFFF;
+  font-family: var(--font-sans);
+  font-weight: 500; /* Solid medium base weight so Vietnamese diacritics never break or look faint */
+  letter-spacing: -0.011em; /* Tighter letter-spacing makes text solid & cohesive */
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Ensure headings are bold with crisp stroke */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  color: var(--brand-navy);
+}
+
+/* Prevent text fracture on smaller sizes */
+p, span, li, a, label, input, select, textarea {
+  font-weight: 500;
+}
+
+strong, b {
+  font-weight: 750;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Ultra-smooth Card Hover Effect */
+.card-hover-effect {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+  will-change: transform, box-shadow;
+}
+.card-hover-effect:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(16, 42, 67, 0.12), 0 10px 10px -5px rgba(16, 42, 67, 0.04);
+}
+
+/* Button Glow & Shimmer Effect */
+.btn-sheen {
+  position: relative;
+  overflow: hidden;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-sheen::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, transparent 30%, rgba(255, 255, 255, 0.25) 50%, transparent 70%);
+  transform: rotate(30deg) translateX(-100%);
+  transition: transform 0.75s ease;
+}
+.btn-sheen:hover::after {
+  transform: rotate(30deg) translateX(100%);
+}
+.btn-sheen:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -5px rgba(37, 99, 235, 0.35);
+}
+
+/* Subtle Floating Elements */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 4s ease-in-out infinite;
+}
+
+.animate-float-gentle-delayed {
+  animation: floatGentle 4.5s ease-in-out infinite 1.5s;
+}
+
+/* Image zoom on hover */
+.img-zoom-wrapper img {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-zoom-wrapper:hover img {
+  transform: scale(1.06);
+}
+
+/* Glassmorphism utility */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
