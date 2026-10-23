@@ -22,22 +22,10 @@ export const siteConfig = {
 
   offices: [
     {
-      city: "TP. Hồ Chí Minh (Văn phòng chính)",
-      address: "Số 52/22 Cù Lao, Phường 2, Quận Phú Nhuận, TP. Hồ Chí Minh",
-      phone: "(028) 3848 7671",
-      email: "hcm@duhockts.vn",
-    },
-    {
       city: "Hà Nội",
-      address: "Tòa nhà Capital Building, 109 Trần Hưng Đạo, Hoàn Kiếm, Hà Nội",
-      phone: "(024) 3974 6688",
-      email: "hanoi@duhockts.vn",
-    },
-    {
-      city: "Đà Nẵng",
-      address: "Tầng 3, Tòa nhà Indochina Riverside, 74 Bạch Đằng, Hải Châu, Đà Nẵng",
-      phone: "(0236) 366 7788",
-      email: "danang@duhockts.vn",
+      address: "52/22 Lương Khánh Thiện, Hoàng Mai, Hà Nội",
+      phone: "0977 100 283",
+      email: "info@duhockts.vn",
     },
   ],
 

@@ -14,7 +14,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Liên Hệ Văn Phòng Tư Vấn Du Học KTS",
   description:
-    "Thông tin liên hệ, hotline, email và địa chỉ các văn phòng Du Học KTS tại TP. Hồ Chí Minh, Hà Nội và Đà Nẵng.",
+    "Thông tin liên hệ, hotline, email và địa chỉ văn phòng Du Học KTS tại Hà Nội.",
 };
 
 export default function ContactPage() {
@@ -26,10 +26,10 @@ export default function ContactPage() {
             Kết nối cùng chúng tôi
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold text-brand-navy mt-3">
-            Hệ Thống Văn Phòng & Liên Hệ
+            Văn Phòng Du Học KTS & Liên Hệ
           </h1>
           <p className="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
-            Chúng tôi luôn sẵn sàng đón tiếp phụ huynh và học sinh tại các văn phòng trên toàn quốc hoặc hỗ trợ trực tuyến 24/7.
+            Chúng tôi luôn sẵn sàng đón tiếp phụ huynh và học sinh tại văn phòng Hà Nội hoặc hỗ trợ tư vấn trực tuyến 24/7.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function ContactPage() {
 
                 <p className="text-xs md:text-sm text-slate-600 flex items-center gap-2">
                   <Phone className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                  <span>Điện thoại bàn: <strong className="text-brand-navy font-mono">{office.phone}</strong></span>
+                  <span>Hotline / Điện thoại: <strong className="text-brand-navy font-mono">{office.phone}</strong></span>
                 </p>
 
                 <p className="text-xs md:text-sm text-slate-600 flex items-center gap-2">

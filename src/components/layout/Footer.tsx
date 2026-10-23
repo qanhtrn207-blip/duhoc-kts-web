@@ -194,7 +194,12 @@ export default function Footer() {
                 <div key={idx} className="border-l-2 border-brand-gold/60 pl-3 space-y-1">
                   <p className="font-bold text-white text-xs">{office.city}</p>
                   <p className="text-slate-300 leading-snug">{office.address}</p>
-                  <p className="text-brand-gold font-mono">{office.phone}</p>
+                  <a
+                    href={`tel:${office.phone.replace(/\s/g, "")}`}
+                    className="text-brand-gold font-mono hover:underline inline-block"
+                  >
+                    {office.phone}
+                  </a>
                 </div>
               ))}
 
