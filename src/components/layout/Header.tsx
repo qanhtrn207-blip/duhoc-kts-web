@@ -21,7 +21,6 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [countryDropdown, setCountryDropdown] = useState(false);
-  const [programsDropdown, setProgramsDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +34,6 @@ export default function Header() {
   useEffect(() => {
     setMobileMenuOpen(false);
     setCountryDropdown(false);
-    setProgramsDropdown(false);
   }, [pathname]);
 
   const countries = [
@@ -150,7 +148,7 @@ export default function Header() {
               Về KTS
             </Link>
 
-            {/* Countries Dropdown */}
+            {/* Countries Dropdown (Du học) */}
             <div
               className="relative"
               onMouseEnter={() => setCountryDropdown(true)}
@@ -164,7 +162,7 @@ export default function Header() {
                 }`}
                 aria-expanded={countryDropdown}
               >
-                <span>Quốc gia</span>
+                <span>Du học</span>
                 <ChevronDown
                   className={`w-4 h-4 transition-transform duration-200 ${
                     countryDropdown ? "rotate-180 text-brand-blue" : ""
@@ -199,70 +197,6 @@ export default function Header() {
                       </Link>
                     ))}
                   </div>
-                </div>
-              )}
-            </div>
-
-            {/* Programs Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => setProgramsDropdown(true)}
-              onMouseLeave={() => setProgramsDropdown(false)}
-            >
-              <button
-                className={`px-3 py-2 rounded-lg text-sm font-semibold flex items-center gap-1 transition-all duration-200 ${
-                  pathname.startsWith("/chuong-trinh")
-                    ? "text-brand-blue bg-blue-50 font-bold"
-                    : "text-slate-700 hover:text-brand-blue hover:bg-slate-50"
-                }`}
-                aria-expanded={programsDropdown}
-              >
-                <span>Chương trình</span>
-                <ChevronDown
-                  className={`w-4 h-4 transition-transform duration-200 ${
-                    programsDropdown ? "rotate-180 text-brand-blue" : ""
-                  }`}
-                />
-              </button>
-
-              {programsDropdown && (
-                <div className="absolute top-full left-0 w-64 bg-white rounded-2xl shadow-2xl border border-slate-100 p-2 z-50 animate-scale-up">
-                  <Link
-                    href="/chuong-trinh"
-                    className="block px-3 py-2 rounded-xl font-bold text-sm text-slate-800 hover:text-brand-blue hover:bg-blue-50/70 transition"
-                  >
-                    Tất cả chương trình
-                  </Link>
-                  <Link
-                    href="/chuong-trinh?level=thpt"
-                    className="block px-3 py-2 rounded-xl text-sm text-slate-600 hover:text-brand-blue hover:bg-blue-50/70 transition"
-                  >
-                    Du học THPT Nội trú
-                  </Link>
-                  <Link
-                    href="/chuong-trinh?level=foundation"
-                    className="block px-3 py-2 rounded-xl text-sm text-slate-600 hover:text-brand-blue hover:bg-blue-50/70 transition"
-                  >
-                    Dự bị đại học / Pathway
-                  </Link>
-                  <Link
-                    href="/chuong-trinh?level=college"
-                    className="block px-3 py-2 rounded-xl text-sm text-slate-600 hover:text-brand-blue hover:bg-blue-50/70 transition"
-                  >
-                    Cao đẳng nghề / Chuyển tiếp 2+2
-                  </Link>
-                  <Link
-                    href="/chuong-trinh?level=bachelor"
-                    className="block px-3 py-2 rounded-xl text-sm text-slate-600 hover:text-brand-blue hover:bg-blue-50/70 transition"
-                  >
-                    Cử nhân / Đại học
-                  </Link>
-                  <Link
-                    href="/chuong-trinh?level=master"
-                    className="block px-3 py-2 rounded-xl text-sm text-slate-600 hover:text-brand-blue hover:bg-blue-50/70 transition"
-                  >
-                    Thạc sĩ / MBA
-                  </Link>
                 </div>
               )}
             </div>
@@ -387,7 +321,7 @@ export default function Header() {
               href="/quoc-gia"
               className="block px-3 py-2.5 rounded-xl text-base font-bold text-slate-800 hover:bg-slate-50"
             >
-              Du học theo quốc gia
+              Du học
             </Link>
             <div className="pl-4 space-y-1 border-l-2 border-slate-100 my-1">
               {countries.map((c) => (
@@ -400,12 +334,6 @@ export default function Header() {
                 </Link>
               ))}
             </div>
-            <Link
-              href="/chuong-trinh"
-              className="block px-3 py-2.5 rounded-xl text-base font-bold text-slate-800 hover:bg-slate-50"
-            >
-              Chương trình du học
-            </Link>
             <Link
               href="/truong-hoc"
               className="block px-3 py-2.5 rounded-xl text-base font-bold text-slate-800 hover:bg-slate-50"

@@ -52,7 +52,7 @@ export const siteConfig = {
     { title: "Trang chủ", href: "/" },
     { title: "Về chúng tôi", href: "/ve-chung-toi" },
     {
-      title: "Du học theo quốc gia",
+      title: "Du học",
       href: "/quoc-gia",
       children: [
         { title: "Du học Mỹ", href: "/quoc-gia/my", description: "Hệ thống đại học hàng đầu thế giới với học bổng đa dạng" },
@@ -63,18 +63,6 @@ export const siteConfig = {
         { title: "Du học Singapore", href: "/quoc-gia/singapore", description: "Đầu tàu giáo dục châu Á, gần gũi và chi phí tối ưu" },
         { title: "Du học Hàn Quốc", href: "/quoc-gia/han-quoc", description: "Chi phí hợp lý, ngành truyền thông & công nghệ tiên phong" },
         { title: "Du học Nhật Bản", href: "/quoc-gia/nhat-ban", description: "Vừa học vừa làm, cơ hội nghề nghiệp kỹ thuật cao" },
-      ],
-    },
-    {
-      title: "Chương trình",
-      href: "/chuong-trinh",
-      children: [
-        { title: "Du học THPT", href: "/chuong-trinh?level=thpt" },
-        { title: "Dự bị đại học / Pathway", href: "/chuong-trinh?level=foundation" },
-        { title: "Cao đẳng / Nghề", href: "/chuong-trinh?level=college" },
-        { title: "Đại học / Cử nhân", href: "/chuong-trinh?level=bachelor" },
-        { title: "Thạc sĩ / Sau đại học", href: "/chuong-trinh?level=master" },
-        { title: "Khóa học ngôn ngữ", href: "/chuong-trinh?level=language" },
       ],
     },
     { title: "Trường học", href: "/truong-hoc" },

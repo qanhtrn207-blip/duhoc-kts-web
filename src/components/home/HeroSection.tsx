@@ -40,10 +40,10 @@ export default function HeroSection() {
               </Link>
 
               <Link
-                href="/chuong-trinh"
+                href="/quoc-gia"
                 className="w-full sm:w-auto px-7 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-base border border-white/20 transition-all duration-200 backdrop-blur-md text-center hover:scale-105"
               >
-                Khám phá chương trình
+                Khám phá du học
               </Link>
             </div>
 

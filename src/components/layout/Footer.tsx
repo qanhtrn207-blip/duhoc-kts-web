@@ -101,9 +101,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/chuong-trinh" className="hover:text-brand-gold transition duration-200 flex items-center gap-1.5 hover:translate-x-1">
+                <Link href="/quoc-gia" className="hover:text-brand-gold transition duration-200 flex items-center gap-1.5 hover:translate-x-1">
                   <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  <span>Chương trình đào tạo</span>
+                  <span>Điểm đến du học</span>
                 </Link>
               </li>
               <li>
