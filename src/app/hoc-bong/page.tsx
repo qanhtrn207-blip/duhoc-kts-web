@@ -51,7 +51,7 @@ export default async function ScholarshipsPage({ searchParams }: ScholarshipsPag
             Danh Sách Học Bổng Du Học Mới Nhất
           </h1>
           <p className="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
-            EduGlobal cập nhật liên tục các suất học bổng từ 20% đến 100% học phí được thẩm định điều kiện bởi ban cố vấn học thuật.
+            Du Học KTS cập nhật liên tục các suất học bổng từ 20% đến 100% học phí được thẩm định điều kiện bởi ban cố vấn học thuật.
           </p>
         </div>
 

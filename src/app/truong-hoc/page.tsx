@@ -5,7 +5,7 @@ import { Building, MapPin, ExternalLink, ArrowRight, Award } from "lucide-react"
 import { getUniversities, getCountries } from "@/lib/data/repository";
 
 export const metadata: Metadata = {
-  title: "Danh Sách Các Trường Đại Học Quốc Tế Đối Tác — EduGlobal",
+  title: "Danh Sách Các Trường Đại Học Quốc Tế Đối Tác — Du Học KTS",
   description:
     "Danh sách các trường đại học, cao đẳng uy tín hàng đầu tại Mỹ, Úc, Anh, Canada, New Zealand, Singapore và Hàn Quốc.",
 };
@@ -30,7 +30,7 @@ export default async function UniversitiesPage() {
             Các Trường Đại Học & Cao Đẳng Quốc Tế
           </h1>
           <p className="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
-            EduGlobal tự hào là đối tác tuyển sinh chính thức của hàng trăm trường đại học danh tiếng, mang lại cơ hội tiếp cận học bổng và thủ tục nhập học nhanh chóng.
+            Du Học KTS tự hào là đối tác tuyển sinh chính thức của hàng trăm trường đại học danh tiếng, mang lại cơ hội tiếp cận học bổng và thủ tục nhập học nhanh chóng.
           </p>
         </div>
 

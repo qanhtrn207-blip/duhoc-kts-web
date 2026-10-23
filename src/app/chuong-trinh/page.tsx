@@ -146,7 +146,7 @@ export default async function ProgramsPage({ searchParams }: ProgramsPageProps) 
             <GraduationCap className="w-12 h-12 text-slate-300 mx-auto mb-3" />
             <h3 className="text-lg font-bold text-slate-700">Chưa tìm thấy chương trình phù hợp</h3>
             <p className="text-xs text-slate-500 mt-1 max-w-md mx-auto">
-              Vui lòng thử điều chỉnh lại bộ lọc tìm kiếm hoặc liên hệ trực tiếp EduGlobal để được cố vấn lộ trình riêng.
+              Vui lòng thử điều chỉnh lại bộ lọc tìm kiếm hoặc liên hệ trực tiếp Du Học KTS để được cố vấn lộ trình riêng.
             </p>
             <Link
               href="/chuong-trinh"

@@ -176,7 +176,7 @@ export default async function ProgramDetailPage({ params }: ProgramDetailPagePro
                 defaultLevel={program.degree_level}
                 sourcePage={`/chuong-trinh/${program.slug}`}
                 title="Đăng ký xét tuyển chương trình này"
-                subtitle="Chuyên viên EduGlobal sẽ hỗ trợ bạn kiểm tra hồ sơ và hướng dẫn các bước xin học bổng."
+                subtitle="Chuyên viên Du Học KTS sẽ hỗ trợ bạn kiểm tra hồ sơ và hướng dẫn các bước xin học bổng."
               />
             </div>
           </div>

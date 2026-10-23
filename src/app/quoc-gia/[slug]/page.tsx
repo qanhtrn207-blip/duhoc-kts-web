@@ -69,7 +69,7 @@ export default async function CountryDetailPage({ params }: CountryPageProps) {
     },
     {
       q: `Quy trình xin visa du học ${country.name} có khó không?`,
-      a: `Quy trình đòi hỏi tính minh bạch cao về năng lực học thuật và nguồn gốc tài chính gia đình. Khi đồng hành cùng EduGlobal, bạn sẽ được hướng dẫn chuẩn hóa giấy tờ và luyện phỏng vấn 1-1 với kịch bản sát thực tế.`,
+      a: `Quy trình đòi hỏi tính minh bạch cao về năng lực học thuật và nguồn gốc tài chính gia đình. Khi đồng hành cùng Du Học KTS, bạn sẽ được hướng dẫn chuẩn hóa giấy tờ và luyện phỏng vấn 1-1 với kịch bản sát thực tế.`,
     },
   ];
 

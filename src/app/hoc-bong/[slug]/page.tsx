@@ -122,7 +122,7 @@ export default async function ScholarshipDetailPage({ params }: ScholarshipDetai
               <ConsultationForm
                 sourcePage={`/hoc-bong/${s.slug}`}
                 title="Đăng ký xét duyệt học bổng này"
-                subtitle="Cố vấn học thuật EduGlobal sẽ đánh giá hồ sơ và hỗ trợ chiến lược bài luận cá nhân cho bạn."
+                subtitle="Cố vấn học thuật Du Học KTS sẽ đánh giá hồ sơ và hỗ trợ chiến lược bài luận cá nhân cho bạn."
               />
             </div>
           </div>

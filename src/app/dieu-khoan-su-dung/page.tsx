@@ -4,8 +4,8 @@ import { FileText, ShieldAlert } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Điều Khoản Sử Dụng — EduGlobal Vietnam",
-  description: "Điều khoản và quy định sử dụng website tư vấn du học EduGlobal.",
+  title: "Điều Khoản Sử Dụng — Du Học KTS Vietnam",
+  description: "Điều khoản và quy định sử dụng website tư vấn du học Du Học KTS.",
 };
 
 export default function TermsPage() {
@@ -33,10 +33,10 @@ export default function TermsPage() {
           <section className="space-y-3 text-sm text-slate-700 leading-relaxed">
             <h2 className="text-lg font-bold text-brand-navy">2. Tuyên bố miễn trừ trách nhiệm</h2>
             <p>
-              Các thông tin về học phí, quy định thị thực (visa) và điều kiện nhập học có thể thay đổi theo thời gian bởi các cơ quan di trú và ban tuyển sinh của từng trường. EduGlobal nỗ lực cập nhật dữ liệu thường xuyên nhất có thể, tuy nhiên người dùng nên liên hệ cố vấn để nhận thông tin mới nhất tại thời điểm nộp đơn.
+              Các thông tin về học phí, quy định thị thực (visa) và điều kiện nhập học có thể thay đổi theo thời gian bởi các cơ quan di trú và ban tuyển sinh của từng trường. Du Học KTS nỗ lực cập nhật dữ liệu thường xuyên nhất có thể, tuy nhiên người dùng nên liên hệ cố vấn để nhận thông tin mới nhất tại thời điểm nộp đơn.
             </p>
             <p>
-              EduGlobal là đơn vị tư vấn giáo dục độc lập, kết quả cấp visa thuộc toàn quyền quyết định của Đại sứ quán / Tổng Lãnh sự quán của các quốc gia sở tại.
+              Du Học KTS là đơn vị tư vấn giáo dục độc lập, kết quả cấp visa thuộc toàn quyền quyết định của Đại sứ quán / Tổng Lãnh sự quán của các quốc gia sở tại.
             </p>
           </section>
         </div>

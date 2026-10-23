@@ -82,7 +82,7 @@ export default async function PostDetailPage({ params }: PostDetailPageProps) {
             <div className="flex flex-wrap items-center gap-4 text-xs text-slate-500 pb-6 border-b border-slate-100">
               <span className="flex items-center gap-1.5">
                 <User className="w-3.5 h-3.5 text-brand-blue" />
-                <span>{post.author_name || "Ban Cố Vấn EduGlobal"}</span>
+                <span>{post.author_name || "Ban Cố Vấn Du Học KTS"}</span>
               </span>
               <span>•</span>
               <span className="flex items-center gap-1.5">
@@ -184,7 +184,7 @@ export default async function PostDetailPage({ params }: PostDetailPageProps) {
               <ConsultationForm
                 sourcePage={`/tin-tuc/${post.slug}`}
                 title="Cần hỗ trợ thông tin chi tiết?"
-                subtitle="Chuyên viên EduGlobal luôn sẵn sàng giải đáp mọi thắc mắc của bạn."
+                subtitle="Chuyên viên Du Học KTS luôn sẵn sàng giải đáp mọi thắc mắc của bạn."
               />
             </div>
           </aside>

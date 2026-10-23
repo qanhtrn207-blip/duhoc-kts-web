@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: ServiceDetailPageProps): Prom
   if (!svc) return { title: "Không tìm thấy dịch vụ" };
 
   return {
-    title: `${svc.name} — EduGlobal Vietnam`,
+    title: `${svc.name} — Du Học KTS Vietnam`,
     description: svc.short_description,
   };
 }

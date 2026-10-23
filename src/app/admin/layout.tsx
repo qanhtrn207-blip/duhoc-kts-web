@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cổng Quản Trị EduGlobal CRM & CMS",
+  title: "Cổng Quản Trị Du Học KTS CRM & CMS",
   robots: {
     index: false,
     follow: false,

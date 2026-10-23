@@ -125,7 +125,7 @@ export default function AdminLeadsPage() {
         "Ghi chú chăm sóc": l.internal_notes || "",
         "Thời gian tạo": l.created_at,
       })),
-      `EduGlobal-Leads-${new Date().toISOString().slice(0, 10)}`
+      `KTS-Leads-${new Date().toISOString().slice(0, 10)}`
     );
   };
 

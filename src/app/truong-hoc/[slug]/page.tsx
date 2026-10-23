@@ -117,7 +117,7 @@ export default async function UniversityDetailPage({ params }: UniversityDetailP
 
               {uniPrograms.length === 0 ? (
                 <p className="text-sm text-slate-500 italic">
-                  Hiện trường có nhiều chuyên ngành đa dạng. Vui lòng liên hệ cố vấn EduGlobal để nhận danh sách ngành đào tạo chi tiết của trường.
+                  Hiện trường có nhiều chuyên ngành đa dạng. Vui lòng liên hệ cố vấn Du Học KTS để nhận danh sách ngành đào tạo chi tiết của trường.
                 </p>
               ) : (
                 <div className="space-y-3">

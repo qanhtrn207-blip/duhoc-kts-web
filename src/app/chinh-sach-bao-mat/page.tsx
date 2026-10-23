@@ -4,8 +4,8 @@ import { ShieldCheck, Lock, FileText, CheckCircle2 } from "lucide-react";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Chính Sách Bảo Mật Thông Tin Khách Hàng — EduGlobal",
-  description: "Cam kết bảo mật dữ liệu và quyền riêng tư của phụ huynh và học sinh tại EduGlobal Vietnam.",
+  title: "Chính Sách Bảo Mật Thông Tin Khách Hàng — Du Học KTS",
+  description: "Cam kết bảo mật dữ liệu và quyền riêng tư của phụ huynh và học sinh tại Du Học KTS Vietnam.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
               <span>3. Quyền của khách hàng đối với dữ liệu</span>
             </h2>
             <p>
-              Bất kỳ lúc nào, quý khách có quyền yêu cầu EduGlobal kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ vĩnh viễn thông tin cá nhân của mình khỏi cơ sở dữ liệu bằng cách liên hệ qua email: <strong>{siteConfig.contact.email}</strong> hoặc hotline: <strong>{siteConfig.contact.hotline}</strong>.
+              Bất kỳ lúc nào, quý khách có quyền yêu cầu Du Học KTS kiểm tra, cập nhật, điều chỉnh hoặc hủy bỏ vĩnh viễn thông tin cá nhân của mình khỏi cơ sở dữ liệu bằng cách liên hệ qua email: <strong>{siteConfig.contact.email}</strong> hoặc hotline: <strong>{siteConfig.contact.hotline}</strong>.
             </p>
           </section>
         </div>

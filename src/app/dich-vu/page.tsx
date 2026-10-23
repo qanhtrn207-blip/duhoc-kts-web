@@ -6,7 +6,7 @@ import { getServices } from "@/lib/data/repository";
 import ConsultationForm from "@/components/forms/ConsultationForm";
 
 export const metadata: Metadata = {
-  title: "Dịch Vụ Tư Vấn Du Học Toàn Diện — EduGlobal Vietnam",
+  title: "Dịch Vụ Tư Vấn Du Học Toàn Diện — Du Học KTS Vietnam",
   description:
     "Các dịch vụ hỗ trợ hồ sơ du học, định hướng ngành học, luyện thi tiếng Anh, săn học bổng và luyện phỏng vấn visa chuyên nghiệp.",
 };
@@ -25,7 +25,7 @@ export default async function ServicesPage() {
             <span>Giải pháp đồng hành toàn diện</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-extrabold text-brand-navy">
-            Dịch Vụ Tư Vấn Du Học EduGlobal
+            Dịch Vụ Tư Vấn Du Học Du Học KTS
           </h1>
           <p className="text-slate-600 text-sm md:text-base mt-3 leading-relaxed">
             Chúng tôi cung cấp hệ sinh thái dịch vụ khép kín từ những ngày đầu định hướng ngành học, tối ưu bài luận săn học bổng, xử lý visa đến khi bạn đặt chân đến vùng đất mới.
@@ -88,7 +88,7 @@ export default async function ServicesPage() {
           <ConsultationForm
             sourcePage="/dich-vu"
             title="Đăng ký nhận tư vấn lộ trình dịch vụ"
-            subtitle="Để lại thông tin để chuyên viên EduGlobal phân tích tình trạng hồ sơ miễn phí."
+            subtitle="Để lại thông tin để chuyên viên Du Học KTS phân tích tình trạng hồ sơ miễn phí."
           />
         </div>
       </div>
