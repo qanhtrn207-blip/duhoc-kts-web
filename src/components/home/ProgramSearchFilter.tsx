@@ -55,8 +55,6 @@ export default function ProgramSearchFilter() {
               <option value="canada">Canada</option>
               <option value="new-zealand">New Zealand</option>
               <option value="singapore">Singapore</option>
-              <option value="han-quoc">Hàn Quốc</option>
-              <option value="nhat-ban">Nhật Bản</option>
             </select>
           </div>
 

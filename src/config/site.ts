@@ -6,17 +6,17 @@ export const siteConfig = {
   description:
     "Công Ty Tư Vấn Du Học KTS đồng hành cùng học sinh, sinh viên và phụ huynh Việt Nam lựa chọn quốc gia, trường học, ngành học và lộ trình du học tối ưu với mục tiêu nghề nghiệp và ngân sách gia đình.",
   url: "https://duhockts.vn",
-  ogImage: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1200&auto=format&fit=crop",
+  ogImage: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1200&auto=format&fit=crop",
 
   logo: "/images/logo/logo-kts-png.png",
   logoSquare: "/images/logo/Logo-KTS-in.png",
 
   contact: {
-    hotline: "0907 249 788",
-    hotlineDisplay: "0907.249.788",
-    tollFree: "1800 6868",
+    hotline: "0977 100 283",
+    hotlineDisplay: "0977.100.283",
+    tollFree: "0977 100 283",
     email: "info@duhockts.vn",
-    zaloUrl: "https://zalo.me/0907249788",
+    zaloUrl: "https://zalo.me/0977100283",
     workingHours: "Thứ Hai - Thứ Bảy: 08:00 - 18:00 (Nghỉ Chủ Nhật)",
   },
 
@@ -61,8 +61,6 @@ export const siteConfig = {
         { title: "Du học Canada", href: "/quoc-gia/canada", description: "Chất lượng sống hàng đầu, visa làm việc sau tốt nghiệp lên đến 3 năm" },
         { title: "Du học New Zealand", href: "/quoc-gia/new-zealand", description: "Môi trường học tập thanh bình, chuẩn giáo dục Anh quốc" },
         { title: "Du học Singapore", href: "/quoc-gia/singapore", description: "Đầu tàu giáo dục châu Á, gần gũi và chi phí tối ưu" },
-        { title: "Du học Hàn Quốc", href: "/quoc-gia/han-quoc", description: "Chi phí hợp lý, ngành truyền thông & công nghệ tiên phong" },
-        { title: "Du học Nhật Bản", href: "/quoc-gia/nhat-ban", description: "Vừa học vừa làm, cơ hội nghề nghiệp kỹ thuật cao" },
       ],
     },
     { title: "Trường học", href: "/truong-hoc" },

@@ -181,18 +181,6 @@ export default function Footer() {
                   <span>Du học Singapore</span>
                 </Link>
               </li>
-              <li>
-                <Link href="/quoc-gia/han-quoc" className="hover:text-brand-gold transition duration-200 flex items-center gap-1.5 hover:translate-x-1">
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  <span>Du học Hàn Quốc</span>
-                </Link>
-              </li>
-              <li>
-                <Link href="/quoc-gia/nhat-ban" className="hover:text-brand-gold transition duration-200 flex items-center gap-1.5 hover:translate-x-1">
-                  <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-                  <span>Du học Nhật Bản</span>
-                </Link>
-              </li>
             </ul>
           </div>
 

@@ -12,9 +12,9 @@ import ConsultationForm from "@/components/forms/ConsultationForm";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Liên Hệ Văn Phòng Tư Vấn Du Học EduGlobal",
+  title: "Liên Hệ Văn Phòng Tư Vấn Du Học KTS",
   description:
-    "Thông tin liên hệ, hotline, email và địa chỉ các văn phòng EduGlobal tại TP. Hồ Chí Minh, Hà Nội và Đà Nẵng.",
+    "Thông tin liên hệ, hotline, email và địa chỉ các văn phòng Du Học KTS tại TP. Hồ Chí Minh, Hà Nội và Đà Nẵng.",
 };
 
 export default function ContactPage() {

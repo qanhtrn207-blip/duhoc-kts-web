@@ -199,8 +199,6 @@ export default function ConsultationForm({
               <option value="Canada">Du học Canada</option>
               <option value="New Zealand">Du học New Zealand</option>
               <option value="Singapore">Du học Singapore</option>
-              <option value="Hàn Quốc">Du học Hàn Quốc</option>
-              <option value="Nhật Bản">Du học Nhật Bản</option>
               <option value="Chưa xác định">Cần tư vấn thêm</option>
             </select>
           </div>
@@ -219,7 +217,7 @@ export default function ConsultationForm({
               <option value="Cao đẳng">Cao đẳng / Nghề</option>
               <option value="Đại học">Cử nhân / Đại học</option>
               <option value="Thạc sĩ">Thạc sĩ / Sau đại học</option>
-              <option value="Khóa học tiếng">Khóa học tiếng Anh / Tiếng Hàn / Nhật</option>
+              <option value="Khóa học tiếng">Khóa học tiếng Anh chuyên sâu</option>
             </select>
           </div>
         </div>

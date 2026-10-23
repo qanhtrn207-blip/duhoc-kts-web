@@ -35,9 +35,9 @@ export default function FeaturedCountries({ countries }: FeaturedCountriesProps)
           </Link>
         </div>
 
-        {/* Countries Grid with card hover effect */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {countries.slice(0, 8).map((country) => (
+        {/* Countries Grid with card hover effect (6 destination cards in 2x3 grid) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {countries.slice(0, 6).map((country) => (
             <Link
               key={country.id}
               href={`/quoc-gia/${country.slug}`}

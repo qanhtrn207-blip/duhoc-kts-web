@@ -43,8 +43,6 @@ export default function Header() {
     { name: "Du học Canada", slug: "canada", tag: "PGWP 3 năm & Định cư" },
     { name: "Du học New Zealand", slug: "new-zealand", tag: "Top 3% thế giới" },
     { name: "Du học Singapore", slug: "singapore", tag: "Đầu tàu châu Á" },
-    { name: "Du học Hàn Quốc", slug: "han-quoc", tag: "Học bổng 30-100%" },
-    { name: "Du học Nhật Bản", slug: "nhat-ban", tag: "Học bổng & Việc làm" },
   ];
 
   return (
@@ -115,7 +113,7 @@ export default function Header() {
                   DU HỌC KTS
                 </span>
                 <span className="text-[10px] font-extrabold text-amber-700 bg-amber-50 px-1.5 py-0.2 rounded border border-amber-200">
-                  EST. 2005
+                  EST.2018
                 </span>
               </div>
               <p className="text-[10px] text-slate-500 uppercase tracking-wider font-semibold">

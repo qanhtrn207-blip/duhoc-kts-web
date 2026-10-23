@@ -107,7 +107,7 @@ export default function BookingPage() {
             <CheckCircle2 className="w-16 h-16 text-emerald-600 mx-auto" />
             <h2 className="text-2xl font-bold text-brand-navy">Gửi Yêu Cầu Đặt Lịch Thành Công!</h2>
             <p className="text-slate-600 text-sm max-w-lg mx-auto leading-relaxed">
-              Cảm ơn bạn đã gửi yêu cầu. Bộ phận điều phối của EduGlobal sẽ gọi điện thoại hoặc gửi tin nhắn Zalo trong vòng <strong>24 giờ</strong> để xác nhận lịch hẹn chính thức.
+              Cảm ơn bạn đã gửi yêu cầu. Bộ phận điều phối của Du Học KTS sẽ gọi điện thoại hoặc gửi tin nhắn Zalo trong vòng <strong>24 giờ</strong> để xác nhận lịch hẹn chính thức.
             </p>
             {leadCode && (
               <div className="p-3 bg-emerald-50 text-emerald-800 rounded-xl inline-block text-xs font-mono font-bold">
@@ -135,7 +135,7 @@ export default function BookingPage() {
             <div className="mb-6 p-4 rounded-xl bg-blue-50/70 border border-blue-200/80 text-xs text-blue-900 leading-relaxed flex items-start gap-2.5">
               <Clock className="w-4 h-4 text-brand-blue flex-shrink-0 mt-0.5" />
               <span>
-                <strong>Lưu ý quan trọng:</strong> Đây là biểu mẫu gửi yêu cầu khung giờ mong muốn, chưa phải lịch hẹn đã được xác nhận tự động. Cố vấn EduGlobal sẽ liên hệ xác nhận trạng thái lịch hẹn qua số điện thoại của bạn.
+                <strong>Lưu ý quan trọng:</strong> Đây là biểu mẫu gửi yêu cầu khung giờ mong muốn, chưa phải lịch hẹn đã được xác nhận tự động. Cố vấn Du Học KTS sẽ liên hệ xác nhận trạng thái lịch hẹn qua số điện thoại của bạn.
               </span>
             </div>
 
@@ -208,8 +208,6 @@ export default function BookingPage() {
                       <option value="Canada">Canada</option>
                       <option value="New Zealand">New Zealand</option>
                       <option value="Singapore">Singapore</option>
-                      <option value="Hàn Quốc">Hàn Quốc</option>
-                      <option value="Nhật Bản">Nhật Bản</option>
                       <option value="Chưa xác định">Cần cố vấn tư vấn thêm</option>
                     </select>
                     {errors.country_name && (
@@ -302,7 +300,7 @@ export default function BookingPage() {
                     >
                       <option value="phone">Gọi điện thoại tư vấn trực tiếp</option>
                       <option value="zalo">Tư vấn qua tin nhắn & gọi Zalo</option>
-                      <option value="in_person">Gặp trực tiếp tại Văn phòng EduGlobal</option>
+                      <option value="in_person">Gặp trực tiếp tại Văn phòng Du Học KTS</option>
                       <option value="email">Gửi tài liệu phân tích qua Email trước</option>
                     </select>
                   </div>
@@ -353,7 +351,7 @@ export default function BookingPage() {
                     <Link href="/chinh-sach-bao-mat" className="text-brand-blue font-bold hover:underline" target="_blank">
                       Chính sách bảo mật
                     </Link>{" "}
-                    của EduGlobal. Tôi đồng ý để chuyên viên liên hệ phục vụ mục đích tư vấn giáo dục.
+                    của Du Học KTS. Tôi đồng ý để chuyên viên liên hệ phục vụ mục đích tư vấn giáo dục.
                   </span>
                 </label>
                 {errors.privacy_consent && (

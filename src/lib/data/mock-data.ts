@@ -18,7 +18,7 @@ export const initialCountries: Country[] = [
     short_description: "Nền giáo dục tinh hoa với hơn 4.000 trường đại học hàng đầu và vô số cơ hội học bổng giá trị cao.",
     description: `Mỹ luôn là điểm đến du học mơ ước của hàng triệu sinh viên toàn cầu. Với nền kinh tế số 1 thế giới và các trường đại học danh tiếng thuộc khối Ivy League cùng hàng trăm viện nghiên cứu hàng đầu, sinh viên tại Mỹ được tiếp cận phương pháp học tập khai phóng, môi trường đa văn hóa và cơ hội thực tập OPT lên tới 3 năm đối với các khối ngành STEM.
 
-Chính sách học bổng tại Mỹ rất phong phú: từ Merit-based scholarship (học bổng học thuật) đến Need-based financial aid (hỗ trợ tài chính). Đội ngũ tư vấn EduGlobal sẽ hỗ trợ bạn xây dựng hồ sơ hoạt động ngoại khóa, bài luận Personal Statement và chiến lược nộp đơn sớm (ED/EA) nhằm tối đa hóa cơ hội trúng tuyển.`,
+Chính sách học bổng tại Mỹ rất phong phú: từ Merit-based scholarship (học bổng học thuật) đến Need-based financial aid (hỗ trợ tài chính). Đội ngũ tư vấn Du Học KTS sẽ hỗ trợ bạn xây dựng hồ sơ hoạt động ngoại khóa, bài luận Personal Statement và chiến lược nộp đơn sớm (ED/EA) nhằm tối đa hóa cơ hội trúng tuyển.`,
     image_url: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1000&auto=format&fit=crop",
     banner_url: "https://images.unsplash.com/photo-1485738422979-f5c462d49f74?q=80&w=1200&auto=format&fit=crop",
     is_published: true,
@@ -88,7 +88,7 @@ Sinh viên quốc tế tại Úc được phép làm thêm hợp pháp 48 giờ 
     description: `Canada nổi tiếng với sự mến khách, xã hội văn minh và chất lượng đào tạo được kiểm định nghiêm ngặt bởi các tỉnh bang. Hệ thống các trường đại học như Toronto, McGill, UBC cùng các trường Cao đẳng ứng dụng (Colleges) tạo ra lộ trình học tập linh hoạt và gắn liền với việc làm thực tế.
 
 Chương trình Post-Graduation Work Permit (PGWP) cho phép bạn làm việc tới 3 năm sau khi tốt nghiệp. Đây là bước đệm lý tưởng để tích lũy kinh nghiệm làm việc theo chuẩn Canada và nộp hồ sơ xin Thường trú nhân (PR).`,
-    image_url: "https://images.unsplash.com/photo-1517935703635-27190775268c?q=80&w=1000&auto=format&fit=crop",
+    image_url: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=1000&auto=format&fit=crop",
     banner_url: "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=80&w=1200&auto=format&fit=crop",
     is_published: true,
     sort_order: 4,
@@ -142,46 +142,6 @@ Chương trình Post-Graduation Work Permit (PGWP) cho phép bạn làm việc t
     created_at: "2026-01-01T00:00:00Z",
     updated_at: "2026-01-01T00:00:00Z",
   },
-  {
-    id: "c7",
-    name: "Du học Hàn Quốc",
-    slug: "han-quoc",
-    code: "KR",
-    short_description: "Làn sóng Hallyu bùng nổ, chi phí hợp lý, học bổng 30-100% học phí và cơ hội làm việc tại các tập đoàn đa quốc gia.",
-    description: `Hàn Quốc là điểm đến du học hấp dẫn bậc nhất châu Á nhờ chi phí học tập hợp lý, nền công nghệ tiên phong và văn hóa trẻ trung sôi động. Các trường đại học danh tiếng nhóm SKY (Seoul, Korea, Yonsei) và hệ thống trường đại học công lập mang lại chất lượng đào tạo vượt trội.`,
-    image_url: "https://images.unsplash.com/photo-1538485399081-7191377e8241?q=80&w=1000&auto=format&fit=crop",
-    is_published: true,
-    sort_order: 7,
-    education_system: "Khóa học tiếng Hàn (D4-1), Đại học chuyên ngành (D2-2), Cao học Thạc sĩ / Tiến sĩ (D2-3, D2-4).",
-    degree_levels: ["Khóa tiếng Hàn", "Cao đẳng chuyên nghiệp", "Cử nhân", "Thạc sĩ"],
-    popular_majors: ["Truyền thông & Điện ảnh", "Ngôn ngữ Hàn Quốc", "Quản trị kinh doanh quốc tế", "Thiết kế thời trang & Làm đẹp", "Công nghệ bán dẫn"],
-    average_tuition: "$4,500 - $9,000 USD / năm",
-    average_living_cost: "$6,000 - $9,000 USD / năm",
-    visa_requirements: "Visa D-4 (Du học tiếng) hoặc D-2 (Du học chuyên ngành): Cần sổ tiết kiệm đóng băng tại ngân hàng Hàn Quốc ở Việt Nam (K-Study) và hồ sơ học tập minh bạch.",
-    official_visa_url: "https://overseas.mofa.go.kr/vn-vi/index.do",
-    created_at: "2026-01-01T00:00:00Z",
-    updated_at: "2026-01-01T00:00:00Z",
-  },
-  {
-    id: "c8",
-    name: "Du học Nhật Bản",
-    slug: "nhat-ban",
-    code: "JP",
-    short_description: "Cường quốc khoa học kỹ thuật với phong cách làm việc kỷ luật, học bổng chính phủ MEXT và cơ hội định cư làm việc lâu dài.",
-    description: `Nhật Bản sở hữu nền giáo dục đẳng cấp hàng đầu thế giới với nhiều nhà khoa học đạt giải Nobel. Du học sinh tại Nhật có cơ hội vừa học vừa làm hợp pháp 28 giờ/tuần để trang trải sinh hoạt phí. Sau khi tốt nghiệp, bạn có thể chuyển đổi sang visa kỹ sư hoặc visa lao động tay nghề cao để ở lại làm việc lâu dài.`,
-    image_url: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?q=80&w=1000&auto=format&fit=crop",
-    is_published: true,
-    sort_order: 8,
-    education_system: "Trường tiếng Nhật (1-2 năm) -> Trường chuyên môn (Senmon) 2 năm hoặc Đại học (4 năm), Cao học.",
-    degree_levels: ["Trường Nhật ngữ", "Senmon (Chuyên môn)", "Đại học", "Cao học"],
-    popular_majors: ["Công nghệ thông tin", "Cơ khí & Chế tạo máy", "Điều dưỡng & Hộ lý", "Biên phiên dịch tiếng Nhật", "Kinh tế đối ngoại"],
-    average_tuition: "$5,000 - $8,500 USD / năm",
-    average_living_cost: "$7,000 - $10,000 USD / năm",
-    visa_requirements: "Cần giấy chứng nhận tư cách lưu trú COE (Certificate of Eligibility) từ Cục Quản lý Xuất nhập cảnh Nhật Bản trước khi nộp xin visa tại Đại sứ quán.",
-    official_visa_url: "https://www.vn.emb-japan.go.jp/",
-    created_at: "2026-01-01T00:00:00Z",
-    updated_at: "2026-01-01T00:00:00Z",
-  },
 ];
 
 export const initialUniversities: University[] = [
@@ -210,7 +170,7 @@ export const initialUniversities: University[] = [
     website_url: "https://www.unimelb.edu.au",
     description: "Đại học số 1 nước Úc và thuộc Top 13 thế giới (QS 2024), thành viên nhóm trường nghiên cứu tinh hoa Group of Eight.",
     logo_url: "https://images.unsplash.com/photo-1592280771190-3e2e4d571952?q=80&w=200&auto=format&fit=crop",
-    cover_url: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000&auto=format&fit=crop",
+    cover_url: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1000&auto=format&fit=crop",
     ranking: "#1 tại Úc, #13 Thế giới (QS 2024)",
     tuition_range: "$42,000 - $55,000 AUD / năm",
     is_published: true,
@@ -269,34 +229,6 @@ export const initialUniversities: University[] = [
     description: "Trường đại học số 1 Châu Á và Top 8 thế giới, cái nôi đào tạo nhân tài và lãnh đạo cấp cao cho toàn khu vực.",
     ranking: "#8 Thế giới (QS 2024)",
     tuition_range: "$32,000 - $45,000 SGD / năm",
-    is_published: true,
-    created_at: "2026-01-01T00:00:00Z",
-    updated_at: "2026-01-01T00:00:00Z",
-  },
-  {
-    id: "u7",
-    name: "Yonsei University",
-    slug: "yonsei-university",
-    country_id: "c7",
-    location: "Seoul, Hàn Quốc",
-    website_url: "https://www.yonsei.ac.kr",
-    description: "Một trong 3 trường đại học hàng đầu Hàn Quốc (thuộc khối SKY), nổi bật với chương trình đào tạo quốc tế Underwood International College (UIC).",
-    ranking: "#76 Thế giới (QS 2024)",
-    tuition_range: "$7,000 - $12,000 USD / năm",
-    is_published: true,
-    created_at: "2026-01-01T00:00:00Z",
-    updated_at: "2026-01-01T00:00:00Z",
-  },
-  {
-    id: "u8",
-    name: "Waseda University",
-    slug: "waseda-university",
-    country_id: "c8",
-    location: "Tokyo, Nhật Bản",
-    website_url: "https://www.waseda.jp",
-    description: "Đại học tư thục hàng đầu Nhật Bản, sở hữu cộng đồng sinh viên quốc tế đông đảo nhất và nhiều cựu thủ tướng Nhật Bản từng theo học.",
-    ranking: "#199 Thế giới (QS 2024)",
-    tuition_range: "$9,000 - $14,000 USD / năm",
     is_published: true,
     created_at: "2026-01-01T00:00:00Z",
     updated_at: "2026-01-01T00:00:00Z",
@@ -408,27 +340,6 @@ export const initialPrograms: Program[] = [
     created_at: "2026-01-01T00:00:00Z",
     updated_at: "2026-01-01T00:00:00Z",
   },
-  {
-    id: "p6",
-    name: "Cử nhân Nghiên cứu Quốc tế & Hàn Quốc học (Underwood International College)",
-    slug: "cu-nhan-quoc-te-yonsei-uic",
-    country_id: "c7",
-    university_id: "u7",
-    degree_level: "bachelor",
-    field_of_study: "Truyền thông & Xã hội",
-    duration: "4 năm (100% tiếng Anh)",
-    tuition_min: 7500,
-    tuition_max: 9500,
-    currency: "USD",
-    entry_requirements: "GPA cấp 3 từ 8.0/10; IELTS 6.5 hoặc TOEFL 85+; bài luận tiếng Anh cá nhân.",
-    description: "Chương trình đại học khai phóng 100% bằng tiếng Anh tại trường đại học danh tiếng số 1 tư thục Hàn Quốc, cơ hội nhận học bổng từ 30% đến 100% học phí.",
-    intake_information: "Kỳ mùa Xuân (Tháng 3) & Kỳ mùa Thu (Tháng 9).",
-    source_url: "https://uic.yonsei.ac.kr",
-    last_verified_at: "2026-02-12T00:00:00Z",
-    is_published: true,
-    created_at: "2026-01-01T00:00:00Z",
-    updated_at: "2026-01-01T00:00:00Z",
-  },
 ];
 
 export const initialScholarships: Scholarship[] = [
@@ -508,7 +419,7 @@ export const initialServices: Service[] = [
     name: "Định hướng Quốc gia, Trường & Ngành học",
     slug: "dinh-huong-quoc-gia-truong-nganh",
     short_description: "Phân tích năng lực học thuật, sở thích cá nhân và ngân sách gia đình để xây dựng lộ trình du học phù hợp nhất.",
-    content: `Việc lựa chọn đúng ngành và đúng trường là bước đi quyết định sự thành bại của toàn bộ chuyến du học. Tại EduGlobal, chúng tôi áp dụng phương pháp trắc nghiệm định hướng nghề nghiệp kết hợp cùng phân tích xu hướng dịch chuyển lao động quốc tế để giúp bạn:
+    content: `Việc lựa chọn đúng ngành và đúng trường là bước đi quyết định sự thành bại của toàn bộ chuyến du học. Tại Du Học KTS, chúng tôi áp dụng phương pháp trắc nghiệm định hướng nghề nghiệp kết hợp cùng phân tích xu hướng dịch chuyển lao động quốc tế để giúp bạn:
 - Xác định điểm mạnh học thuật và năng lực ngoại ngữ thực tế.
 - Lập danh sách các trường mục tiêu (Dream School, Match School và Safe School).
 - Tối ưu hóa ngân sách tài chính gia đình theo từng năm học.
@@ -530,7 +441,7 @@ export const initialServices: Service[] = [
     name: "Hỗ trợ Chuẩn bị Hồ sơ Tuyển sinh",
     slug: "chuan-bi-ho-so-tuyen-sinh",
     short_description: "Tối ưu hóa bảng điểm, dịch thuật công chứng chuẩn xác và hướng dẫn viết bài luận cá nhân (Personal Statement) ấn tượng.",
-    content: `Một bộ hồ sơ xin học ấn tượng không chỉ nằm ở điểm số cao mà còn nằm ở câu chuyện riêng biệt của bạn. Chuyên gia EduGlobal đồng hành cùng bạn trong từng khâu:
+    content: `Một bộ hồ sơ xin học ấn tượng không chỉ nằm ở điểm số cao mà còn nằm ở câu chuyện riêng biệt của bạn. Chuyên gia Du Học KTS đồng hành cùng bạn trong từng khâu:
 - Rà soát và chuẩn hóa toàn bộ giấy tờ học bạ, bảng điểm và bằng cấp.
 - Hướng dẫn lên dàn ý và tinh chỉnh bài luận cá nhân Personal Statement / Statement of Purpose (SOP).
 - Hướng dẫn người giới thiệu viết thư tiến cử (Letter of Recommendation).
@@ -552,7 +463,7 @@ export const initialServices: Service[] = [
     name: "Hướng dẫn & Luyện Phỏng vấn Visa",
     slug: "huong-dan-ho-so-visa",
     short_description: "Chuẩn bị hồ sơ chứng minh tài chính chuẩn chỉ và tổ chức các buổi phỏng vấn giả định 1-1 với kịch bản thực tế.",
-    content: `Quy trình xin visa du học đòi hỏi sự chính xác tuyệt đối và tính minh bạch. EduGlobal giúp bạn:
+    content: `Quy trình xin visa du học đòi hỏi sự chính xác tuyệt đối và tính minh bạch. Du Học KTS giúp bạn:
 - Nắm bắt quy định visa cập nhật nhất của từng quốc gia (F-1 Mỹ, Subclass 500 Úc, Student Visa Anh, Study Permit Canada).
 - Hướng dẫn chuẩn bị giấy tờ chứng minh nguồn gốc tài chính hợp pháp.
 - Luyện phỏng vấn 1-1 với các câu hỏi bám sát thực tế, rèn luyện phong thái tự tin và kỹ năng trả lời logic.`,
@@ -573,7 +484,7 @@ export const initialServices: Service[] = [
     name: "Chiến lược Săn Học bổng Giá trị Cao",
     slug: "chien-luoc-san-hoc-bong",
     short_description: "Tìm kiếm học bổng 30% - 100% học phí, hướng dẫn viết luận học bổng và luyện phỏng vấn vòng chung kết.",
-    content: `Học bổng giúp giảm bớt gánh nặng tài chính đáng kể cho gia đình. Với mạng lưới đối tác rộng lớn, EduGlobal cập nhật các suất học bổng sớm nhất trước khi mở công khai, xây dựng chiến lược làm nổi bật tiềm năng của bạn trước hội đồng xét duyệt.`,
+    content: `Học bổng giúp giảm bớt gánh nặng tài chính đáng kể cho gia đình. Với mạng lưới đối tác rộng lớn, Du Học KTS cập nhật các suất học bổng sớm nhất trước khi mở công khai, xây dựng chiến lược làm nổi bật tiềm năng của bạn trước hội đồng xét duyệt.`,
     image_url: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
     features: [
       "Bộ sưu tập học bổng độc quyền từ các trường đối tác",
@@ -591,7 +502,7 @@ export const initialServices: Service[] = [
     name: "Đào tạo Tiếng Anh Học thuật & Luyện thi",
     slug: "dao-tao-tieng-anh-luyen-thi",
     short_description: "Lộ trình cấp tốc chinh phục IELTS, TOEFL, PTE Academic, SAT và kỹ năng thuyết trình, viết luận tiếng Anh học thuật.",
-    content: `Điểm chuẩn ngoại ngữ là điều kiện tiên quyết để nhập học và xin học bổng. EduGlobal cung cấp các khóa ôn thi cá nhân hóa giúp học viên nâng band điểm nhanh chóng và tự tin tiếp thu bài giảng ở bậc đại học.`,
+    content: `Điểm chuẩn ngoại ngữ là điều kiện tiên quyết để nhập học và xin học bổng. Du Học KTS cung cấp các khóa ôn thi cá nhân hóa giúp học viên nâng band điểm nhanh chóng và tự tin tiếp thu bài giảng ở bậc đại học.`,
     image_url: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?q=80&w=800&auto=format&fit=crop",
     features: [
       "Kiểm tra năng lực đầu vào miễn phí chuẩn quốc tế",
@@ -609,11 +520,11 @@ export const initialServices: Service[] = [
     name: "Hành trang Tiền Khởi hành & Đồng hành Du học",
     slug: "hanh-trang-tien-khoi-hanh",
     short_description: "Tổ chức buổi hướng dẫn trước khi bay (Pre-departure briefing), hỗ trợ tìm chỗ ở, bảo hiểm, vé máy bay và kết nối hội sinh viên.",
-    content: `Sự hỗ trợ của EduGlobal không dừng lại khi bạn nhận được visa. Chúng tôi đồng hành cùng du học sinh trong suốt quá trình hòa nhập tại vùng đất mới:
+    content: `Sự hỗ trợ của Du Học KTS không dừng lại khi bạn nhận được visa. Chúng tôi đồng hành cùng du học sinh trong suốt quá trình hòa nhập tại vùng đất mới:
 - Hướng dẫn đặt vé máy bay sinh viên và sắp xếp dịch vụ đón tại sân bay.
 - Giúp tìm kiếm và ký hợp đồng ký túc xá, homestay hoặc căn hộ an toàn.
 - Hướng dẫn mở tài khoản ngân hàng quốc tế, mua sim thẻ và bảo hiểm sinh viên.
-- Kết nối vào mạng lưới cựu học sinh EduGlobal đang học tập tại địa phương.`,
+- Kết nối vào mạng lưới cựu học sinh Du Học KTS đang học tập tại địa phương.`,
     image_url: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=800&auto=format&fit=crop",
     features: [
       "Hội thảo Pre-departure định kỳ trang bị kỹ năng sống",
@@ -632,7 +543,7 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "t1",
     display_name: "Nguyễn Minh Châu",
-    student_story: "Nhờ sự định hướng tận tình từ các anh chị EduGlobal, em đã hoàn thành bài luận xuất sắc và nhận được học bổng 50% toàn khóa tại Đại học Melbourne. Quy trình làm hồ sơ visa Úc diễn ra suôn sẻ chỉ trong 3 tuần!",
+    student_story: "Nhờ sự định hướng tận tình từ các anh chị Du Học KTS, em đã hoàn thành bài luận xuất sắc và nhận được học bổng 50% toàn khóa tại Đại học Melbourne. Quy trình làm hồ sơ visa Úc diễn ra suôn sẻ chỉ trong 3 tuần!",
     school_name: "The University of Melbourne",
     country_id: "c2",
     country_name: "Úc",
@@ -658,7 +569,7 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "t3",
     display_name: "Lê Khánh Linh",
-    student_story: "Chương trình Thạc sĩ 1 năm tại Anh giúp mình tiết kiệm rất nhiều chi phí và thời gian. Chị tư vấn viên EduGlobal theo sát hồ sơ, giải quyết mọi thắc mắc của bố mẹ mình rất chu đáo.",
+    student_story: "Chương trình Thạc sĩ 1 năm tại Anh giúp mình tiết kiệm rất nhiều chi phí và thời gian. Chị tư vấn viên Du Học KTS theo sát hồ sơ, giải quyết mọi thắc mắc của bố mẹ mình rất chu đáo.",
     school_name: "University of Manchester",
     country_id: "c3",
     country_name: "Anh Quốc",
@@ -671,7 +582,7 @@ export const initialTestimonials: Testimonial[] = [
   {
     id: "t4",
     display_name: "Phạm Đức Anh",
-    student_story: "EduGlobal đã hỗ trợ mình xin Study Permit Canada vào thời điểm có rất nhiều thay đổi chính sách mới. Hồ sơ tài chính được chuẩn bị khoa học, minh bạch nên kết quả visa đến rất nhanh chóng.",
+    student_story: "Du Học KTS đã hỗ trợ mình xin Study Permit Canada vào thời điểm có rất nhiều thay đổi chính sách mới. Hồ sơ tài chính được chuẩn bị khoa học, minh bạch nên kết quả visa đến rất nhanh chóng.",
     school_name: "University of British Columbia",
     country_id: "c4",
     country_name: "Canada",
@@ -701,9 +612,9 @@ Theo quy định mới nhất, mức chi phí sinh hoạt tối thiểu cần ch
 - Bậc học Cử nhân và Thạc sĩ: Yêu cầu chứng chỉ IELTS tối thiểu 6.5 (hoặc tương đương PTE 58).
 - Các khóa học Dự bị và Pathway: IELTS tối thiểu 5.5.
 
-### Lời khuyên từ chuyên gia EduGlobal
+### Lời khuyên từ chuyên gia Du Học KTS
 Du học sinh cần lên kế hoạch chuẩn bị hồ sơ từ 6 đến 9 tháng trước kỳ nhập học mong muốn. Việc chuẩn bị chứng từ tài chính minh bạch và thư giải trình mục đích học tập chân thực là yếu tố quyết định giúp hồ sơ visa được duyệt nhanh chóng.`,
-    cover_image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=800&auto=format&fit=crop",
+    cover_image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=800&auto=format&fit=crop",
     category: "visa",
     author_name: "Chuyên viên Visa Quốc tế",
     status: "published",
@@ -732,7 +643,7 @@ Nhiều bạn nghĩ rằng phải giải cứu thế giới hay đạt huy chư�
 ### 3. Nguyên tắc "Show, Don't Tell"
 Thay vì viết "Tôi là người kiên trì", hãy miêu tả việc bạn đã thức trắng đêm kiểm tra từng dòng mã máy tính suốt 3 tuần để tìm ra lỗi trong dự án khoa học.
 
-Liên hệ EduGlobal ngay để được chuyên gia bài luận hỗ trợ hiệu đính và hoàn thiện bài viết của bạn!`,
+Liên hệ Du Học KTS ngay để được chuyên gia bài luận hỗ trợ hiệu đính và hoàn thiện bài viết của bạn!`,
     cover_image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=800&auto=format&fit=crop",
     category: "hoc-bong",
     author_name: "Ban Cố vấn Học bổng",
@@ -749,7 +660,7 @@ Liên hệ EduGlobal ngay để được chuyên gia bài luận hỗ trợ hi�
     title: "So sánh chi phí du học thực tế tại Mỹ, Anh, Úc và Canada năm 2026",
     slug: "so-sanh-chi-phi-du-hoc-my-anh-uc-canada",
     excerpt: "Bảng tổng hợp chi tiết học phí, chi phí sinh hoạt, cơ hội làm thêm và các chi phí phát sinh giúp phụ huynh dự trù ngân sách chuẩn xác.",
-    content: `Chi phí du học luôn là mối quan tâm hàng đầu của các bậc phụ huynh và học sinh khi lên kế hoạch vươn ra biển lớn. Dưới đây là bức tranh so sánh tài chính tổng quan được EduGlobal tổng hợp:
+    content: `Chi phí du học luôn là mối quan tâm hàng đầu của các bậc phụ huynh và học sinh khi lên kế hoạch vươn ra biển lớn. Dưới đây là bức tranh so sánh tài chính tổng quan được Du Học KTS tổng hợp:
 
 ### 1. Du học Mỹ
 - **Học phí trung bình:** $25,000 - $60,000 USD / năm tùy trường công lập hay tư thục.
@@ -787,7 +698,7 @@ Liên hệ EduGlobal ngay để được chuyên gia bài luận hỗ trợ hi�
     title: "Hội thảo Du học & Học bổng Toàn cầu Mùa Thu 2026 cùng hơn 50 đại diện trường",
     slug: "hoi-thao-du-hoc-hoc-bong-toan-cau-2026",
     excerpt: "Gặp gỡ trực tiếp giám đốc tuyển sinh các trường đại học Mỹ, Úc, Anh, Canada; xét học bổng tại chỗ và miễn phí dịch thuật hồ sơ.",
-    content: `EduGlobal trân trọng kính mời quý phụ huynh và các bạn học sinh sinh viên tham dự ngày hội giáo dục quốc tế lớn nhất trong năm:
+    content: `Du Học KTS trân trọng kính mời quý phụ huynh và các bạn học sinh sinh viên tham dự ngày hội giáo dục quốc tế lớn nhất trong năm:
 
 - **Thời gian:** 08:30 - 12:30, Thứ Bảy ngày 18 tháng 10 năm 2026.
 - **Địa điểm:** Khách sạn Rex Hotel Saigon, 141 Nguyễn Huệ, Quận 1, TP. HCM.
@@ -795,14 +706,14 @@ Liên hệ EduGlobal ngay để được chuyên gia bài luận hỗ trợ hi�
 
 ### Quyền lợi khi tham dự:
 1. Phỏng vấn trực tiếp với đại diện trường và nhận thư mời học bổng ngay tại sự kiện.
-2. Được chuyên viên EduGlobal đánh giá hồ sơ học thuật 1-1 miễn phí.
+2. Được chuyên viên Du Học KTS đánh giá hồ sơ học thuật 1-1 miễn phí.
 3. Nhận cẩm nang du học và quà tặng trị giá tới 10.000.000 VNĐ hỗ trợ lệ phí visa và dịch thuật.`,
     cover_image: "https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=800&auto=format&fit=crop",
     category: "su-kien",
-    author_name: "Ban Tổ chức Sự kiện EduGlobal",
+    author_name: "Ban Tổ chức Sự kiện Du Học KTS",
     status: "published",
     published_at: "2026-01-28T09:00:00Z",
-    meta_title: "Hội thảo Du học & Học bổng Quốc tế 2026 - EduGlobal",
+    meta_title: "Hội thảo Du học & Học bổng Quốc tế 2026 - Du Học KTS",
     meta_description: "Đăng ký tham dự hội thảo du học lớn nhất năm để nhận học bổng tại chỗ và tư vấn lộ trình 1-1 cùng chuyên gia.",
     reading_time: "4 phút đọc",
     created_at: "2026-01-28T09:00:00Z",

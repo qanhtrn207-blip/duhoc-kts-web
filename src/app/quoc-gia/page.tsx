@@ -5,9 +5,9 @@ import { ArrowRight, Globe, Award, DollarSign, CheckCircle2 } from "lucide-react
 import { getCountries } from "@/lib/data/repository";
 
 export const metadata: Metadata = {
-  title: "Du Học Theo Quốc Gia — Mỹ, Úc, Anh, Canada, New Zealand, Châu Á",
+  title: "Điểm Đến Du Học — Mỹ, Úc, Anh, Canada, New Zealand, Singapore",
   description:
-    "Khám phá lộ trình du học, điều kiện tuyển sinh, học phí, học bổng và quy trình xin visa tại các quốc gia hàng đầu thế giới.",
+    "Khám phá lộ trình du học, điều kiện tuyển sinh, học phí, học bổng và quy trình xin visa tại các quốc gia hàng đầu thế giới cùng Du Học KTS.",
 };
 
 export const revalidate = 3600;

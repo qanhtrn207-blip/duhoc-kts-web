@@ -18,7 +18,7 @@ import { siteConfig } from "@/config/site";
 export const metadata: Metadata = {
   title: "Về Chúng Tôi — Câu Chuyện Thương Hiệu & Sứ Mệnh",
   description:
-    "Tìm hiểu về EduGlobal Vietnam - Tổ chức tư vấn du học uy tín, tận tâm, cam kết đồng hành cùng học sinh và phụ huynh trên con đường vươn ra thế giới.",
+    "Tìm hiểu về Công Ty Tư Vấn Du Học KTS - Tổ chức tư vấn du học uy tín, tận tâm, cam kết đồng hành cùng học sinh và phụ huynh trên con đường vươn ra thế giới.",
 };
 
 export default function AboutPage() {
@@ -96,7 +96,7 @@ export default function AboutPage() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl aspect-[4/3]">
                 <img
                   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800&auto=format&fit=crop"
-                  alt="Đội ngũ tư vấn du học EduGlobal"
+                  alt="Đội ngũ tư vấn Du Học KTS"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -192,7 +192,7 @@ export default function AboutPage() {
           <ConsultationForm
             sourcePage="/ve-chung-toi"
             title="Sẵn sàng thảo luận về kế hoạch du học của bạn?"
-            subtitle="Đặt lịch hẹn trò chuyện 1-1 trực tiếp cùng giám đốc học thuật EduGlobal."
+            subtitle="Đặt lịch hẹn trò chuyện 1-1 trực tiếp cùng giám đốc học thuật Du Học KTS."
           />
         </div>
       </section>
