@@ -74,6 +74,27 @@ export default function BookingPage() {
       if (res.success) {
         setSubmitStatus("success");
         setLeadCode(res.leadId || "");
+
+        // Save to local storage for immediate CRM view in test mode
+        try {
+          const raw = localStorage.getItem("kts_client_leads");
+          const list = raw ? JSON.parse(raw) : [];
+          list.unshift({
+            id: res.leadId || ("lead-" + Date.now()),
+            full_name: data.full_name,
+            phone: data.phone,
+            email: data.email || "",
+            country_name: data.country_name || "Chưa chọn",
+            education_level: data.education_level || "Chưa chọn",
+            budget: data.budget || "",
+            message: `Đặt lịch hẹn: ${data.preferred_consultation_time || ""} (${data.preferred_contact_method || "phone"}). Ghi chú: ${data.message || ""}`,
+            source_page: "/dat-lich-tu-van",
+            status: "new",
+            created_at: new Date().toISOString(),
+          });
+          localStorage.setItem("kts_client_leads", JSON.stringify(list.slice(0, 50)));
+        } catch (e) {}
+
         reset();
       } else {
         setSubmitStatus("error");

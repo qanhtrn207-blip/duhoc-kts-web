@@ -33,15 +33,46 @@ export default function AdminLeadsPage() {
   const [internalNotes, setInternalNotes] = useState("");
   const [saving, setSaving] = useState(false);
   const [actionMessage, setActionMessage] = useState("");
+  const [dbDiagnostics, setDbDiagnostics] = useState<{ isConfigured: boolean; hasUrl: boolean; hasAnonKey: boolean } | null>(null);
 
   const fetchLeads = async () => {
     setLoading(true);
     try {
       const res = await fetch(`/api/admin/leads?status=${statusFilter}&search=${encodeURIComponent(searchTerm)}`);
       const data = await res.json();
-      if (data.success) {
-        setLeads(data.leads || []);
+      let combinedLeads: Lead[] = data.success ? (data.leads || []) : [];
+
+      if (data.diagnostics) {
+        setDbDiagnostics(data.diagnostics);
       }
+
+      // Merge leads saved locally on this browser (e.g. from local tests)
+      try {
+        const localRaw = localStorage.getItem("kts_client_leads");
+        if (localRaw) {
+          const localList: Lead[] = JSON.parse(localRaw);
+          const existingIds = new Set(combinedLeads.map((l) => l.id));
+          const newLocals = localList.filter((l) => !existingIds.has(l.id));
+          combinedLeads = [...newLocals, ...combinedLeads];
+        }
+      } catch (e) {}
+
+      // Apply filter
+      if (statusFilter !== "all") {
+        combinedLeads = combinedLeads.filter((l) => l.status === statusFilter);
+      }
+
+      if (searchTerm) {
+        const q = searchTerm.toLowerCase();
+        combinedLeads = combinedLeads.filter(
+          (l) =>
+            l.full_name?.toLowerCase().includes(q) ||
+            l.phone?.toLowerCase().includes(q) ||
+            (l.email && l.email.toLowerCase().includes(q))
+        );
+      }
+
+      setLeads(combinedLeads);
     } catch (err) {
       console.error("Fetch leads error:", err);
     } finally {
@@ -92,6 +123,20 @@ export default function AdminLeadsPage() {
               : l
           )
         );
+
+        // Update localStorage as well
+        try {
+          const raw = localStorage.getItem("kts_client_leads");
+          if (raw) {
+            const list = JSON.parse(raw);
+            const updated = list.map((l: any) =>
+              l.id === selectedLead.id
+                ? { ...l, status: editingStatus, internal_notes: internalNotes }
+                : l
+            );
+            localStorage.setItem("kts_client_leads", JSON.stringify(updated));
+          }
+        } catch (e) {}
         setSelectedLead((prev) =>
           prev ? { ...prev, status: editingStatus, internal_notes: internalNotes } : null
         );
@@ -158,9 +203,29 @@ export default function AdminLeadsPage() {
               <Users className="w-7 h-7 text-brand-blue" />
               <span>Quản Lý Khách Hàng Tiềm Năng (Leads CRM)</span>
             </h1>
-            <p className="text-xs text-slate-500 mt-1">
-              Tiếp nhận, phân bổ, theo dõi quy trình tư vấn và chăm sóc hồ sơ du học sinh.
-            </p>
+            <div className="flex flex-wrap items-center gap-2.5 mt-1.5">
+              <p className="text-xs text-slate-500">
+                Tiếp nhận, phân bổ, theo dõi quy trình tư vấn và chăm sóc hồ sơ du học sinh.
+              </p>
+              {dbDiagnostics && (
+                <span
+                  className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold tracking-tight ${
+                    dbDiagnostics.isConfigured
+                      ? "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                      : "bg-amber-50 text-amber-800 border border-amber-200"
+                  }`}
+                >
+                  <span
+                    className={`w-1.5 h-1.5 rounded-full ${
+                      dbDiagnostics.isConfigured ? "bg-emerald-500 animate-pulse" : "bg-amber-500"
+                    }`}
+                  />
+                  {dbDiagnostics.isConfigured
+                    ? "Supabase Database: Đã kết nối"
+                    : "Chế độ Test (Local CRM)"}
+                </span>
+              )}
+            </div>
           </div>
 
           <div className="flex items-center gap-2.5">

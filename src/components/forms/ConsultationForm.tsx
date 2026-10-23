@@ -77,6 +77,27 @@ export default function ConsultationForm({
       if (resData.success) {
         setSubmitStatus("success");
         setLeadCode(resData.leadId || "");
+
+        // Save to local storage for immediate CRM view in test mode
+        try {
+          const raw = localStorage.getItem("kts_client_leads");
+          const list = raw ? JSON.parse(raw) : [];
+          list.unshift({
+            id: resData.leadId || ("lead-" + Date.now()),
+            full_name: data.full_name,
+            phone: data.phone,
+            email: data.email || "",
+            country_name: data.country_name || "Chưa chọn",
+            education_level: data.education_level || "Chưa chọn",
+            budget: data.budget || "",
+            message: data.message || "",
+            source_page: sourcePage,
+            status: "new",
+            created_at: new Date().toISOString(),
+          });
+          localStorage.setItem("kts_client_leads", JSON.stringify(list.slice(0, 50)));
+        } catch (e) {}
+
         reset();
       } else {
         setSubmitStatus("error");

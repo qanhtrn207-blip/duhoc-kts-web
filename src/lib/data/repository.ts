@@ -240,32 +240,35 @@ export async function createLead(
     try {
       const admin = getAdminClient();
       if (admin) {
+        const insertPayload: any = {
+          full_name: leadData.full_name,
+          phone: leadData.phone,
+          email: leadData.email || null,
+          country_name: leadData.country_name || null,
+          education_level: leadData.education_level || null,
+          field_of_study: leadData.field_of_study || null,
+          budget: leadData.budget || null,
+          target_intake: leadData.target_intake || null,
+          preferred_contact_method: leadData.preferred_contact_method || "phone",
+          preferred_consultation_time: leadData.preferred_consultation_time || null,
+          message: leadData.message || null,
+          source_page: leadData.source_page || "/",
+          status: leadData.status || "new",
+          privacy_consent_at: leadData.privacy_consent_at || now,
+        };
+
+        if (leadData.country_id && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(leadData.country_id)) {
+          insertPayload.country_id = leadData.country_id;
+        }
+
         const { data, error } = await admin
           .from("leads")
-          .insert([
-            {
-              full_name: leadData.full_name,
-              phone: leadData.phone,
-              email: leadData.email,
-              country_id: leadData.country_id,
-              country_name: leadData.country_name,
-              education_level: leadData.education_level,
-              field_of_study: leadData.field_of_study,
-              budget: leadData.budget,
-              target_intake: leadData.target_intake,
-              preferred_contact_method: leadData.preferred_contact_method,
-              preferred_consultation_time: leadData.preferred_consultation_time,
-              message: leadData.message,
-              source_page: leadData.source_page || "/",
-              status: leadData.status || "new",
-              privacy_consent_at: leadData.privacy_consent_at || now,
-            },
-          ])
+          .insert([insertPayload])
           .select()
           .single();
 
         if (error) {
-          console.error("Supabase createLead error:", error);
+          console.error("Supabase createLead error:", error.message || error);
           // Fall back to memory so submission does not fail for the user
           memoryLeads.unshift(newLead);
           return { success: true, data: newLead };

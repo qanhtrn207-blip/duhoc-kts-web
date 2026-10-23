@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { getLeads, updateLeadStatus } from "@/lib/data/repository";
+import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { LeadStatus } from "@/types/database";
 
 export async function GET(request: Request) {
@@ -9,7 +10,13 @@ export async function GET(request: Request) {
     const search = searchParams.get("search") || "";
 
     const leads = await getLeads({ status, search });
-    return NextResponse.json({ success: true, leads });
+    const diagnostics = {
+      isConfigured: isSupabaseConfigured(),
+      hasUrl: Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL),
+      hasAnonKey: Boolean(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY),
+      hasServiceKey: Boolean(process.env.SUPABASE_SERVICE_ROLE_KEY),
+    };
+    return NextResponse.json({ success: true, leads, diagnostics });
   } catch (error) {
     return NextResponse.json({ success: false, error: "Lỗi tải danh sách leads" }, { status: 500 });
   }
